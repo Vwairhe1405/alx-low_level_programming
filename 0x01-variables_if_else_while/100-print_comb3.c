@@ -3,7 +3,7 @@
 #include <time.h>
 /**
  * main - Prints all possible different combinations of two digits,
- * 	in ascending order, separated by a comma followed by space
+ *	in ascending order, separated by a comma followed by space
  *
  * Return: Always 0
  */
