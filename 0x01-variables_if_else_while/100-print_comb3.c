@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - main function
+ * main - main functions
  *
  * Return: Always 0
  */
