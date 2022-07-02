@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - Prints all possible different combinations of two digits,
- *        separated by a comma folowed by a space, in ascending order
+ * main - Prints all possible different combinations of two digit,
+ * 	 separated by a comma folowed by a space, in ascending order
  *
  * Return: Always 0
  */
