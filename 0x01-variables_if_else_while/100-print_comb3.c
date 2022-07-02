@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - main functions
+ * main - main function
  *
  * Return: Always 0
- */
+ */	
 int main(void)
 {
 	int digit1, digit2;
