@@ -2,8 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - Prints all possible different combinations of two digits,
- *	in ascending order, separated by a comma followed by space
+ * main - main function
  *
  * Return: Always 0
  */
