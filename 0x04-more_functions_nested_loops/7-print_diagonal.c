@@ -18,7 +18,7 @@ void print_diagonal(int n)
 				putchar(' ');
 			putchar('\\');
 
-			if (lin == n -1)
+			if (lin == n - 1)
 				continue;
 
 			putchar('\n');
