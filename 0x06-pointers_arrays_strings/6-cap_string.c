@@ -3,28 +3,38 @@
 
 /**
  * cap_string - function that capitalizes all words of a string.
- * @y: The string
+ * @str: The string
  *
  * Return: Capitalized string
  *
  */
-char *cap_string(char *y)
+char *cap_string(char *str)
 {
-char spc[] = {32, 9, '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
-int len = 13;
-int a = 0, i;
+	int index = 0;
 
-while (y[i])
-{
-	i = 0;
-	while (i < len)
+	while (str[index])
 	{
-	if ((a == 0 || y[a - 1] == spc[i]) && (y[a] >= 97 && y[a] <= 122))
-		y[a] = y[a] - 32;
+		while (!(str[index] >= 'a' && str[index] <= 'z'))
+			index++;
 
-		i++;
+		if (str[index - 1] == ' ' ||
+			str[index - 1] == '\t' ||
+			str[index - 1] == '\n' ||
+			str[index - 1] == ',' ||
+			str[index - 1] == ';' ||
+			str[index - 1] == '.' ||
+			str[index - 1] == '!' ||
+			str[index - 1] == '?' ||
+			str[index - 1] == '"' ||
+			str[index - 1] == '(' ||
+			str[index - 1] == ')' ||
+			str[index - 1] == '{' ||
+			str[index - 1] == '}' ||
+			index == 0)
+			str[index] -= 32;
+
+		index++;
 	}
-	a++;
-	}
-return (y);
+	return (str);
 }
+
