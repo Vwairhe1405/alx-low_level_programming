@@ -5,7 +5,8 @@
 /**
  * main - check the code
  * Return: Always 0.
- */ int main(void)
+ */
+int main(void)
 {
 	list_t *head;
 	list_t *new;
@@ -14,7 +15,7 @@
 	head = &hello;
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
-	{
+	{ 
 		printf("Error\n");
 		return (1);
 	}
@@ -22,9 +23,13 @@
 	new->len = 5;
 	new->next = head;
 	head = new;
-	n = list_len(head);
+	n = print_list(head);
 	printf("-> %lu elements\n", n);
+	printf("\n");
 	free(new->str);
+	new->str = NULL;
+	n = print_list(head);
+	printf("-> %lu elements\n", n);
 	free(new);
-	return (0);
+	return (0); 
 }
